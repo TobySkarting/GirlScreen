@@ -257,6 +257,7 @@ namespace GirlScreen
         private void UnLockComputer()
         {
             WinAPI.ClipCursor(IntPtr.Zero);
+            ToogleHook();
             DisablePolicies(false);
             contextMenuStrip1.Enabled = true;
             labelStatus.Visible = false;
